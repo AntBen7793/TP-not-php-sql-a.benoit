@@ -41,18 +41,24 @@
             while($row = mysqli_fetch_array($res, MYSQLI_ASSOC))
             {
 			      echo "<tr>";
-			      
-					  echo "<div style='color:red'>";
-					  echo "<td><img src='sprites/".$row["identifier"].".png' alt='".$row["identifier"]."'></td>";
+			      if($row["base_experience"]>=200)
+			      {
+					  echo "<div class='super'>";
+					  echo "<td class='super'><img src='sprites/".$row["identifier"].".png' alt='".$row["identifier"]."'></td>";
+					echo "<td class='super'>".$row["id"]."</td>";
+					echo "<td class='super'>".$row["identifier"]."</td>";
+					echo "<td class='super'>".$row["height"]."</td>";
+					echo "<td class='super'>".$row["weight"]."</td>";
+					echo "<td class='super'>".$row["base_experience"]."</td>";
+					  echo "</div>";
+				  }
+				  else{
+				  echo "<td><img src='sprites/".$row["identifier"].".png' alt='".$row["identifier"]."'></td>";
 					echo "<td>".$row["id"]."</td>";
 					echo "<td>".$row["identifier"]."</td>";
 					echo "<td>".$row["height"]."</td>";
 					echo "<td>".$row["weight"]."</td>";
-					echo "<td>".$row["base_experience"]."</td>";
-					  echo "</div>";
-				  
-				  
-				  
+					echo "<td>".$row["base_experience"]."</td>";}
 				  echo"</tr>";
             }
         }
