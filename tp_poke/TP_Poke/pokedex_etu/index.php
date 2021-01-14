@@ -66,22 +66,8 @@
 ?>
 		  
 		  
-        <tr>
-          <td><img src="sprites/bulbasaur.png" alt="bulbasaur"></td>
-          <td>1</td>
-          <td>bulbasaur</td>
-          <td>7</td>
-          <td>69</td>
-          <td>64</td>
-        </tr>
-        <tr>
-          <td><img src="sprites/ivysaur.png" alt="bulbasaur"></td>
-          <td>2</td>
-          <td>ivysaur</td>
-          <td>10</td>
-          <td>130</td>
-          <td>1</td>
-        </tr>
+
+
       </tbody>
     </table>
   </body>
